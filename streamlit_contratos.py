@@ -7,6 +7,13 @@ from docx import Document
 from docx.shared import Inches
 import pandas as pd
 
+# TO TENTANDO ESSA ALTERNATIVA DO DISPLAY, MAS NAO CONSEGUI USAR O GIT MAIS
+
+import os
+
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using :0.0')
+    os.environ.__setitem__('DISPLAY', ':0.0')
 
 
 ####################  functions
